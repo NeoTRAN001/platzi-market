@@ -24,6 +24,10 @@ public class Compra {
 
     private LocalDateTime fecha;
 
+    @ManyToOne
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
+    private Cliente cliente;
+
     public Integer getIdCompra() {
         return idCompra;
     }
@@ -70,5 +74,13 @@ public class Compra {
 
     public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
