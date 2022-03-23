@@ -1,12 +1,12 @@
 package com.platzi.market.domain;
 
 public class Product {
-    private int productId;
-    private String name;
     private int categoryId;
-    private double price;
+    private int productId;
     private int stock;
+    private double price;
     private boolean active;
+    private String name;
     private Category category;
 
     public int getProductId() {
