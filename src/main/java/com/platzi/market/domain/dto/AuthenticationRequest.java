@@ -2,7 +2,7 @@ package com.platzi.market.domain.dto;
 
 public class AuthenticationRequest {
     private String username;
-    private String passowrd;
+    private String password;
 
     public String getUsername() {
         return username;
@@ -12,11 +12,11 @@ public class AuthenticationRequest {
         this.username = username;
     }
 
-    public String getPassowrd() {
-        return passowrd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassowrd(String passowrd) {
-        this.passowrd = passowrd;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
